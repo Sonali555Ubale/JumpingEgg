@@ -9,7 +9,7 @@ public class WallController : MonoBehaviour
     public float offset = 0.002f;
     private void Update()
     {
-        if (gameObject.name.Equals("wall_bottom"))
+        if (gameObject!=null && gameObject.name.Equals("wall_bottom"))
         {
             GameManager.instance.WallPositionY = gameObject.transform.position.y + offset;
             //+ (offset * Time.timeScale)

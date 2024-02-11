@@ -24,7 +24,7 @@ public class TrajectoryLine : MonoBehaviour
     {
         // jumping state based on the player's Y velocity
         isJumping = Mathf.Abs(rb.velocity.y) > 0.1f;
-        Debug.LogError("IsJumping Status" + isJumping);
+        //Debug.LogError("IsJumping Status" + isJumping);
         joystickInput = new Vector2(joystick.Horizontal, joystick.Vertical);
 
         if (isJumping==false && joystickInput.magnitude > 0 && joystickInput.y <= 0)
@@ -75,7 +75,7 @@ public class TrajectoryLine : MonoBehaviour
         isJumping = true;
         DisableTrajectory();  
         isTrajectoryEnabled = false;
-        Debug.LogError("Trajectory Disabled");
+        //Debug.LogError("Trajectory Disabled");
     }
 
 

@@ -17,7 +17,7 @@ public class PauseMenuController : MonoBehaviour
     [SerializeField]
     private TMP_Text timerText;
     [SerializeField]
-    private GameObject JoystickObj = null;
+    private GameObject JoystickObj;
 
     // Update is called once per frame
     public void Setup(int score, string timer)
@@ -33,6 +33,7 @@ public class PauseMenuController : MonoBehaviour
         CoinPanel.SetActive(false);
         TimerTextObj.SetActive(false);
         HighScoreObj.SetActive(false);
+        if(JoystickObj!=null)
         JoystickObj.SetActive(false);
     }
 }

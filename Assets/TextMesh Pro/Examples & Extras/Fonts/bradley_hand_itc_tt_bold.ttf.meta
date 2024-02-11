@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 1057429d36176f244b7f022225438feb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Bradley Hand ITC TT
+  fontNames:
+  - Bradley Hand ITC TT
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: c5b09af90cd715c48b73767fe2bdb699, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,36 @@
+0.3.0
+Issues Fixed
+Basket flick issue
+Remove 1x bar showing on start
+1x bar functionality
+Fix stationary paddles positions
+Stationary bowls appears only on the left side of the screen
+
+Updates
+Player: Dialog box added, eyes animations, Player changed to white
+Basket flick animation added
+Change eyes anim to sad if player is below 25% of the screen
+App icon change
+Start Nest added with spring effect
+Timer added in Time Attack Mode
+Camera movement fixed in Endless for smooth transitions
+Removed Trails
+Sign btn removed and sign-in functionality added to leaderboard btn
+
+
+
+0.2.2
+Leaderboard added
+Timer added in Time attack mode
+
+0.2.1
+Player physics modified
+Time Attack Mode game-play changed
+Reduced view scaling
+Bowl speed changed
+Removed Ads
+Added stationary bowls
+
+0.2.0
+Added Time Attack Mode
+GUI changes

@@ -1,0 +1,44 @@
+Game Mechanics
+1. Drag and jump
+2. Stationary baskets***
+3. Bounce paddles
+4. Bouncy walls
+5. Wind
+6. Enemies with bullets
+
+TODO features
+Leaderboard
+
+Player
+- Egg CG distribution```
+
+Power paddles
+1. Double bounce
+2. Jetpack
+
+Intro
+- Black screen with a glowing egg, zooming out to start the game.
+
+Animations
+-Basket flick
+
+UI
+-Dialog (Restart)
+-Reduce Scaling***
+-Ads disable for testing (reduce frequency/change ad placements)
+
+
+Time Attack
+-Pan the screen```
+-Start Timer
+
+
+Issues
+Overlay is getting scrolled along with the egg***
+Paddle speed***
+Change the color as per the distance from the ground***
+Back button press issue. (Resume / Menu selector)
+
+0.2.2
+Stationary bowls appears only on the left side of the screen
+UI changes

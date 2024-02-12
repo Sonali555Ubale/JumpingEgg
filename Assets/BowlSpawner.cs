@@ -9,7 +9,7 @@ public class BowlSpawner : MonoBehaviour
     private float nextSpawnTime = 0f;
     private float verticalSpawnOffset = 3f; 
     private float spawnHeightBuffer = 10f; // Additional height to ensure bowls spawn off-screen and move into view
-    float playerHeight = 1.0f; 
+    float playerHeight = 2.0f; 
 
     public int maxBowlsPerSpawn = 3; 
 

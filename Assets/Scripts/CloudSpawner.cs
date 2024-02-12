@@ -37,7 +37,6 @@ public class CloudSpawner : MonoBehaviour
         int prefabIndex = Random.Range(0, cloudPrefabs.Count);
         Instantiate(cloudPrefabs[prefabIndex], spawnPosition, Quaternion.identity);
 
-        // Update for next cloud
         lastY += verticalOffset;
         spawnLeft = !spawnLeft; // Switch side
         cloudCount++;

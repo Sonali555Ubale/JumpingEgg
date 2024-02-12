@@ -1,23 +1,23 @@
 ﻿using UnityEngine;
-using System.Collections.Generic; // Add this for using List
+using System.Collections.Generic; 
 
 public class BowlSpawner : MonoBehaviour
 {
     public GameObject bowlPrefab;
-    public GameObject player; // Reference to the player object
-    public float spawnRate = 3f; // Time between spawns
-    private float nextSpawnTime = 1f;
-    private float verticalSpawnOffset = 4f; // Vertical offset from the player's position to spawn bowls
+    public GameObject player; 
+    public float spawnRate = 3f; 
+    private float nextSpawnTime = 0f;
+    private float verticalSpawnOffset = 3f; 
     private float spawnHeightBuffer = 10f; // Additional height to ensure bowls spawn off-screen and move into view
-    float playerHeight = 2.0f; 
+    float playerHeight = 1.0f; 
 
-    public int maxBowlsPerSpawn = 3; // Maximum number of bowls to spawn at each interval
+    public int maxBowlsPerSpawn = 3; 
 
     private List<Vector3> lastSpawnPositions = new List<Vector3>(); // List to track last few spawn positions
     private int maxLastSpawnPositions = 5; // Maximum number of last spawn positions to remember
 
     float minVerticalDistance = 3f;
-    float minHorizontalDistance = 5f;
+    float minHorizontalDistance = 2f;
 
     void Update()
     {
@@ -32,7 +32,7 @@ public class BowlSpawner : MonoBehaviour
     {
         int dynamicMaxBowlsPerSpawn = GameManager.CalculateMaxBowlsToSpawn(player.transform.position.y);
 
-        while (dynamicMaxBowlsPerSpawn > -1.9f)
+        while (dynamicMaxBowlsPerSpawn > -3f)
         {
             Vector3 spawnPosition = GetRandomSpawnPosition();
             // Check if the new position is not too close to any of the last few spawn positions
@@ -49,6 +49,7 @@ public class BowlSpawner : MonoBehaviour
             if (!isTooClose)
             {
                 Instantiate(bowlPrefab, spawnPosition, Quaternion.identity);
+               
                 // Update the list of last spawn positions
                 lastSpawnPositions.Add(spawnPosition);
                 if (lastSpawnPositions.Count > maxLastSpawnPositions)

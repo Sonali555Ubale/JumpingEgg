@@ -793,15 +793,13 @@ public class GameManager : MonoBehaviour
 
 	public static float CalculateSpeedMultiplier()
 	{
-		// Ensure there's a fallback if player or instance is null
 		if (instance == null || instance.player == null)
 		{
 			Debug.LogWarning("GameManager or player is not initialized.");
 			return 0f; // Return default speed multiplier to avoid breaking the game.
 		}
-
-		// Example calculation: Increase speed by 0.1% for every unit of player's y position above 0.
-		float baseSpeed = 0.28f;
+		// Increase speed by 0.1% for every unit of player's y position above 0.
+		float baseSpeed = 0.18f;
 		float progressionFactor = 0.005f; //  factor to control how quickly speed escalates.
 		float heightAboveStart = Mathf.Max(0, instance.player.position.y);
 		return baseSpeed + (heightAboveStart * progressionFactor);

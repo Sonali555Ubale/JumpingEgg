@@ -32,7 +32,7 @@ public class CheckEggController : MonoBehaviour
                 _eggX /= _eggX;
 
                 float random = Random.Range(0.51f, 0.62f);
-                Vector3 newBowlV = new Vector3(_eggX > 0 ? -random : random, egg.rb.position.y + 2.6f, 0f);
+                Vector3 newBowlV = new Vector3(_eggX > 0 ? -random : random, egg.rb.position.y + 2.0f, 0f);
                 bowlPrefab.GetComponent<BowlController>().bowlType = 0;
 
                 if (GameManager.instance.getGameMode() != GameManager.GameMode.TUTORIAL)

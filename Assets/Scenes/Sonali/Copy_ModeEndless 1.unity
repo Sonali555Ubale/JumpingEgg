@@ -438,7 +438,7 @@ PrefabInstance:
     - target: {fileID: 8396633700756047076, guid: ca800a885a59d1549a3cd050ad21b9d0,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8396633700756047079, guid: ca800a885a59d1549a3cd050ad21b9d0,
         type: 3}
@@ -1041,8 +1041,8 @@ MonoBehaviour:
   bowlPrefab: {fileID: 8396633700756047076, guid: ca800a885a59d1549a3cd050ad21b9d0,
     type: 3}
   player: {fileID: 1985603619}
-  spawnRate: 2
-  maxBowlsPerSpawn: 3
+  spawnRate: 5
+  maxBowlsPerSpawn: 5
 --- !u!4 &199272295
 Transform:
   m_ObjectHideFlags: 0
@@ -4364,6 +4364,7 @@ MonoBehaviour:
   TimerTextObj: {fileID: 1686114548}
   scoreText: {fileID: 1946830888}
   timerText: {fileID: 1686114550}
+  JoystickObj: {fileID: 0}
 --- !u!1 &740938412
 GameObject:
   m_ObjectHideFlags: 0
@@ -4754,7 +4755,7 @@ PrefabInstance:
     - target: {fileID: 8396633700756047079, guid: ca800a885a59d1549a3cd050ad21b9d0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.08
+      value: -4.02
       objectReference: {fileID: 0}
     - target: {fileID: 8396633700756047079, guid: ca800a885a59d1549a3cd050ad21b9d0,
         type: 3}
@@ -6072,7 +6073,7 @@ PrefabInstance:
     - target: {fileID: 8396633700756047079, guid: ca800a885a59d1549a3cd050ad21b9d0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.96
+      value: -3.93
       objectReference: {fileID: 0}
     - target: {fileID: 8396633700756047079, guid: ca800a885a59d1549a3cd050ad21b9d0,
         type: 3}
@@ -16295,6 +16296,7 @@ MonoBehaviour:
   TimerTextObj: {fileID: 1686114548}
   scoreText: {fileID: 1946830888}
   timerText: {fileID: 1686114550}
+  JoystickObj: {fileID: 0}
 --- !u!114 &2045060772
 MonoBehaviour:
   m_ObjectHideFlags: 0

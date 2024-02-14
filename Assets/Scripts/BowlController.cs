@@ -154,7 +154,7 @@ public class BowlController : MonoBehaviour
         //animator.ResetTrigger("shouldFlick");
         if (this.gameObject.name == "bowl3")
         {
-            Debug.LogError("Tag on Bowl is" + this.gameObject.name);
+        //    Debug.LogError("Tag on Bowl is" + this.gameObject.name);
             tutorialManager.player.transform.position = tutorialManager.endBasket.transform.position;
         }
     }

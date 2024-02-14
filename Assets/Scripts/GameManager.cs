@@ -736,7 +736,7 @@ public class GameManager : MonoBehaviour
 			{
 				float newWidth = Mathf.Max(textSize.x, imageSize.x);
 				float newHeight = Mathf.Max(textSize.y, imageSize.y);
-				imgRect.sizeDelta = new Vector2(newWidth, newHeight);   // Update image size to fit the text
+				imgRect.sizeDelta = new Vector2(newWidth*2, newHeight);   // Update image size to fit the text
 			}
 		}
 	}
@@ -745,7 +745,7 @@ public class GameManager : MonoBehaviour
 	{
 		textComponent.text = text;
 		textComponent.ForceMeshUpdate();
-		var textSize = textComponent.GetRenderedValues(false);
+		var textSize = textComponent.GetRenderedValues(true);
 		return textSize;
 	}
 

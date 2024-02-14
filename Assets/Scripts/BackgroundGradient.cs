@@ -1,12 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Experimental.Rendering.LWRP;
+using UnityEngine.Rendering.Universal;
+//using UnityEngine.Experimental.Rendering.LWRP;
 
 public class BackgroundGradient : MonoBehaviour
 {
     [SerializeField] GameObject sun;
     [SerializeField] Light2D globalLight;
+  
 
     Color colorStartDusk = new Color32(115, 0, 212, 255);
     Color colorEndDusk = new Color32(254, 155, 0, 255);

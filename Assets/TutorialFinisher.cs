@@ -17,7 +17,7 @@ public class TutorialFinisher : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && tutorialManager != null)
         {
-            Debug.LogError("Collision Happend");
+          //  Debug.LogError("Collision Happend");
             FindObjectOfType<AudioManager>().Play("success");
             tutorialManager.FinishTutorial();
         }

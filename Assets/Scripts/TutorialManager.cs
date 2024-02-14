@@ -9,16 +9,16 @@ public class TutorialManager : MonoBehaviour
     private TMPro.TextMeshProUGUI textIntroMessages;
     private Animator animatorIntroMessages;
     private string[] introMessageArr = { 
-        "Hey there! 0", 
-        "Welcome to the Eggs land! 1", 
-        "Allow me\nto guide you through... 2",
-        "Let's begin 3",
-        "Tap anywhere on the screen 4",
-        "Tap now 5",
-        "Tap now 6",
-        "One More jump! 7",
-        "Good Job! 7",
-        "Let's roll\nYou're ready now! 8"
+        "Hey there! ", 
+        "Welcome to the Eggs land! ", 
+        "Allow me\nto guide you through...",
+        "Let's begin ",
+        "Tap anywhere on the screen ",
+        "Tap now ",
+        "Tap now ",
+        "One More jump! ",
+        "Good Job! ",
+        "Let's roll\nYou're ready now!"
         //"Great job!\n You're ready now!"
     };
     private int introMessagesIndex = 0;
@@ -127,7 +127,7 @@ public class TutorialManager : MonoBehaviour
         if (timeAfterIntro > 0) return;
 
         float c1x, c2x;
-        Debug.LogError("Intro msg index:"+introMessagesIndex);
+      //  Debug.LogError("Intro msg index:"+introMessagesIndex);
         if (introMessagesIndex >6) // Handling the last jump
         {
             c1x = bowlController3.transform.position.x;
